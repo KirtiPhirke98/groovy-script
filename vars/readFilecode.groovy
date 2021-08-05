@@ -2,6 +2,6 @@
 @Library('csv')_
 
 def call() {
-  new File("Hello.csv").eachLine { line ->
+  new File("/vars/Hello.csv").eachLine { line ->
     println line
 }
