@@ -3,7 +3,8 @@
 
 def call(String str ) {
    
-	def filePath = readFile "${str}"                   
+	def filePath = readFile "${str}"   
+	println "filePath.toAbsolutePath()"
 	def lines = filePath.readLines()
 	 def linesbyline = filePath.readLines() 
       
