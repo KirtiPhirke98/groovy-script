@@ -1,9 +1,6 @@
 #!/usr/bin/env groovy
-
-
-def call(String str ) {
    
-	def filePath = readFile "${str}"   
+	def filePath = readFile "Hello.csv"   
 	def lines = filePath.readLines()
 	 def linesbyline = filePath.readLines() 
       
@@ -14,4 +11,4 @@ def call(String str ) {
   
  
    
-}
+
