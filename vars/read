@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
-  
+  def call()
+{
 def filePath = readFile "Hello.csv"   
 	def lines = filePath.readLines()
 	 def linesbyline = filePath.readLines() 
@@ -8,6 +9,7 @@ def filePath = readFile "Hello.csv"
                       
                         println "$line"
                         }  
+}
 
   
  
